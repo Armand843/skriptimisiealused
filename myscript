@@ -1,6 +1,6 @@
 #!/bin/bash
 # This is a comment
-echo "The current directory: "
+echo -n "The current directory: "
 pwd
-echo "The user logged in is: "
+echo -n "The user logged in is: "
 whoami
