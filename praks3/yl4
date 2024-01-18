@@ -1,0 +1,15 @@
+#!/bin/bash
+#Bussiekskursiooi kalkulaator
+
+echo -n "Sisesta reisijate arv grupis: "
+read reisijad
+
+echo -n "Sisesta kohtade arv ühes bussis: "
+read kohad_bussis
+
+taielikud_bussid=$((reisijad / kohad_bussis))
+mahajaanud_reisijad=$((reisijad % kohad_bussis))
+
+echo "Täielikult täidetud busse: $taielikud_bussid"
+echo "Maha jäänud reisijad: $mahajaanud_reisijad"
+
